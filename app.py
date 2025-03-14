@@ -9,7 +9,7 @@ import dotenv
 import random
 
 dotenv.load_dotenv()
- YOUTUBE_API_KEY= st.secrets["YOUTUBE_API_KEY"]
+YOUTUBE_API_KEY= st.secrets["YOUTUBE_API_KEY"]
 # Helper functions
 def extract_youtube_video_id(url: str) -> str:
     found = re.search(r"(?:youtu\.be\/|watch\?v=)([\w-]+)", url)
